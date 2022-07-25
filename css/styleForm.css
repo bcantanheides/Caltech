@@ -1,46 +1,53 @@
 .bg-img {
     /* The image used */
-    background-image: url("../imagens/formulário.png");
+    background-image: url("../imagens/forms.jpg");
 
     /* Control the height of the image */
-    min-height: 380px;
+    min-height: 880px;
 
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    top: 70px;
 }
 
 /* Add styles to the form container */
 #conteudo-form {
     position: absolute;
-    right: 0;
+    top: 10px;
+    right: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     margin: 20px;
-    max-width: 300px;
+    max-width: 550px;
     padding: 16px;
     background-color: white;
 }
 
 /* Full-width input fields */
-input[type=text],
-input[type=password] {
+textarea,
+select,
+input:not(#btn-enviar) {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
     background: #f1f1f1;
+    transition: width 0.4s ease-in-out;
 }
 
-input[type=text]:focus,
-input[type=password]:focus {
-    background-color: #ddd;
+input:focus {
+    background: #ddd;
     outline: none;
 }
 
 /* Set a style for the submit button */
 .btn {
-    background-color: #04AA6D;
+    background-color: #0083fd;
     color: white;
     padding: 16px 20px;
     border: none;
@@ -52,3 +59,9 @@ input[type=password]:focus {
 .btn:hover {
     opacity: 1;
 }
+
+.form-inline {
+    display: flex;
+}
+
+.rodape-info {}
