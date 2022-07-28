@@ -15,25 +15,44 @@
 <body>
     <header id="cabeçalho">
         <a href="index.html"><img class="imagem-cabeçalho" src="imagens/logo.png"></a><!--logo da caltech-->
-        <nav class="cabeçalho-menu"><!--menu-->
-            <ul>
-                <li>
-                    <a class="cabeçalho-menu-item" href="faleConosco.html">Fale Conosco</a>
-                </li>
-                <li>
-                    <a class="cabeçalho-menu-item" href="carrinho.html">Carrinho</a>
-                </li>
-            </ul>
-            <div class="cabeçalho-menu-item">
-                <div class="dropdown">
-                    <span class="dropbtn"><img src="imagens/user-icon.png" alt="Acessar Conta" style="width:30px"></span>
-                    <div class="dropdown-content">
-                        <a href="#">Login</a>
-                        <a href="cadastro.html">Cadastrar-se</a>
+        <div class="hamburguer">
+            <nav class="cabeçalho-menu"><!--menu-->
+                <ul>
+                    <li>
+                        <a href="acessorios.html" class="cabeçalho-menu-item">Acessórios</a>
+                    </li>
+                    <li>
+                        <a href="camisas.html" class="cabeçalho-menu-item">Camisas</a>
+                    </li>
+                    <li>
+                        <a href="moletom.html" class="cabeçalho-menu-item">Moletom</a>
+                    </li>
+                    <li>
+                        <a href="calcas.html" class="cabeçalho-menu-item">Calças</a>
+                    </li>
+                    <li>
+                        <a href="shorts.html" class="cabeçalho-menu-item">Shorts</a>
+                    </li>
+                    <li>
+                        <a class="cabeçalho-menu-item" href="faleConosco.html">Fale Conosco</a>
+                    </li>
+                </ul>
+                <div class="cabeçalho-menu-item">
+                    <a href="carrinho.html">
+                        <img src="imagens/carrinho.png" alt="Carrinho" style="width:25px" class="img-btn">
+                    </a>
+                </div>
+                <div class="cabeçalho-menu-item">
+                    <div class="dropdown">
+                        <span class="dropbtn"><img src="imagens/user-icon.png" alt="Acessar Conta" style="width:25px" class="img-btn"></span>
+                        <div class="dropdown-content">
+                            <a href="#">Login</a>
+                            <a href="cadastro.html">Cadastrar-se</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
     <main class="conteudo bg-img">
@@ -85,7 +104,7 @@
                     <input type="tel" id="phone" name="phone" required placeholder="(xx) xxxxx-xxxx" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{4}"/>
                     
                     <label for="obs">Observação:</label>
-                    <textarea name="obs" id="obs" cols="30" rows="4" required placeholder="Faça sua observação"></textarea>
+                    <input name="obs" id="obs" required placeholder="Faça sua observação"></input>
                     
                     <button type="submit" class="btn">Criar Conta</button>
 
