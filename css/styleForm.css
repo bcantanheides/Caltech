@@ -1,67 +1,146 @@
 .bg-img {
-    /* The image used */
-    background-image: url("../imagens/forms.jpg");
+  /* The image used */
+  background-image: url("../imagens/forms.jpg");
 
-    /* Control the height of the image */
-    min-height: 880px;
+  /* Control the height of the image */
+  min-height: 890px;
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    top: 70px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 70px;
+  bottom: 0px;
 }
 
 /* Add styles to the form container */
 #conteudo-form {
-    position: absolute;
-    top: 10px;
-    right: 200px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin: 20px;
-    max-width: 550px;
-    padding: 16px;
-    background-color: white;
+  position: absolute;
+  top: 10px;
+  right: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+  max-width: 550px;
+  border-radius: 10px;
+  padding: 16px;
+  background-color: white;
 }
 
 /* Full-width input fields */
 textarea,
 select,
 input:not(#btn-enviar) {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-    transition: width 0.4s ease-in-out;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background: #f1f1f1;
+  transition: width 0.4s ease-in-out;
 }
 
 input:focus {
-    background: #ddd;
-    outline: none;
+  background: #ddd;
+  outline: none;
 }
 
 /* Set a style for the submit button */
 .btn {
-    background-color: #0083fd;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
+  background-color: #0083fd;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
 }
 
 .btn:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
-.form-inline {
-    display: flex;
+/* Teste */
+form .form-group {
+  float: left;
+  width: 49%;
+}
+form .form-group:not(:nth-child(2n)) {
+  margin-right: 2%;
+}
+form .form-group:last-child {
+  clear: both;
+  width: 100%;
+}
+form .form-group:nth-last-child(2) {
+  clear: both;
+  width: 100%;
 }
 
-.rodape-info {}
+form .form-group-radio {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  justify-content: start;
+}
+
+.form {
+  background: #fff;
+}
+
+form label {
+  display: block;
+}
+
+button,
+input,
+textarea {
+  padding: 1em;
+}
+
+button {
+  background: lightgrey;
+  width: 100%;
+  border: 0;
+}
+button:hover,
+button:focus {
+  background: #0083fd;
+  outline: 0;
+}
+
+.contain {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+@media (min-width: 600px) {
+  .contain {
+    padding: 0;
+  }
+}
+
+.radio + label::before,
+.checkbox + label::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  transition: 0.2s;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.rodape-info {
+  color: white;
+}
