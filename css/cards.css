@@ -1,9 +1,13 @@
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 250px;
+  max-width: 220px;
   margin: auto;
   text-align: center;
   font-family: arial;
+}
+
+.card h1 {
+  font-size: 20px;
 }
 
 .card button {
@@ -24,7 +28,7 @@
 
 .preco {
   color: grey;
-  font-size: 22px;
+  font-size: 18px;
   padding: 8px;
 }
 
