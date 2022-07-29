@@ -135,7 +135,7 @@ nav ul li {
   align-items: center;
   align-content: space-around;
   justify-content: space-around;
-  padding: 120px;
+  padding: 120px 200px 0px 200px;
 }
 
 .rodape-info {
@@ -144,7 +144,7 @@ nav ul li {
   font-weight: 400;
   font-size: 12px;
   text-align: center;
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
   position: relative;
 }
 

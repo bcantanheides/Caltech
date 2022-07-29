@@ -6,6 +6,11 @@
   font-family: arial;
 }
 
+.card img {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
 .card h1 {
   max-height: 28px;
   font-size: 15px;
