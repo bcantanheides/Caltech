@@ -40,3 +40,15 @@
   padding-top: 2px;
   padding-bottom: 8px;
 }
+
+div:not(.cabeçalho-menu-item)>a img:last-child {
+  display: none;
+}
+
+div:not(.cabeçalho-menu-item)>a:hover img:last-child {
+  display: block;
+}
+
+div:not(.cabeçalho-menu-item)>a:hover img:first-child {
+  display: none;
+}
