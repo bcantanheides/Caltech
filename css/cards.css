@@ -23,7 +23,7 @@
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #FFAA4C;
+  background-color: #1062c6;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -31,7 +31,7 @@
 }
 
 .card button:hover {
-  background-color: #c66b02;
+  background-color: #025ac6;
 }
 
 .preco {
