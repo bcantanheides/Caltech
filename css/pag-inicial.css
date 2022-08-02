@@ -19,7 +19,7 @@ body {
   align-items: center;
   align-content: space-around;
   justify-content: space-around;
-  padding: 200px;
+  padding: 130px 200px 100px 200px;
 }
 
 .conteudo a {
@@ -30,7 +30,12 @@ body {
   align-items: center;
   align-content: space-around;
   justify-content: space-around;
-  padding: 0px;
+  padding: 30px;
+}
+
+.conteudo a:hover {
+  color: #0083fd;
+  -webkit-text-stroke: 1px white;
 }
 
 .imageBox {
@@ -38,7 +43,7 @@ body {
   float: left;
 }
 
-.imageBox .hoverImg {
+.imageBox .hover-img {
   position: absolute;
   left: 0;
   top: 0;
@@ -46,23 +51,31 @@ body {
   transition: opacity 1s ease-in-out;
 }
 
-.imageBox:hover .hoverImg {
+.imageBox:hover .hover-img {
   opacity: 1;
 }
 
-.imageBox:hover .imageIn {
+.imageBox:hover .top-img {
   transition: opacity 1s ease-in-out;
   opacity: 0;
 }
 
 .conteudo h1 {
-  padding-top: 60px;
   text-align: center;
   color: yellow;
+  font-family: 'Star Jedi', arial;
+  font-size: 30px;
+  text-shadow: 4px 4px 4px #0083fd;
+  letter-spacing: 2px;
+}
+
+.conteudo h4 {
+  text-align: center;
+  color: white;
+  padding-top: 90px;
 }
 
 .conteudo h1:hover {
-  color: yellow;
   -webkit-text-stroke: 1px #0083fd;
 }
 
