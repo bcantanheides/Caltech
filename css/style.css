@@ -1,152 +1,29 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
-  font-size: 100%;
-  font-family: "Poppins", sans-serif;
+    font-size: 100%;
+    font-family: "Poppins", sans-serif;
 }
 
 a {
-  color: #0083fd;
+    color: #0083fd;
 }
 
 a:hover {
-  color: rgb(58, 179, 255);
+    color: rgb(58, 179, 255);
 }
 
 a:active {
-  color: blue;
+    color: blue;
 }
 
 #cabeçalho {
-  float: inline-start;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  border-bottom: 1px solid #0083fd;
-  background-color: white;
-  height: 70px;
-  z-index: 999;
-}
-
-.imagem-cabeçalho {
-  width: 150px;
-}
-
-.cabeçalho-menu {
-  display: flex;
-  gap: 10px 30px;
-  text-decoration: none;
-}
-
-.img-btn:hover {
-  filter: opacity(0.4) drop-shadow(0 0 0 rgb(58, 179, 255));
-}
-
-nav ul {
-  list-style-type: none;
-}
-
-nav ul li {
-  display: inline;
-  margin: 10px;
-}
-
-.dropbtn {
-  color: #0083fd;
-  padding: 12px;
-  font-size: 16px;
-  border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: #0083fd;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-  color: rgb(58, 179, 255);
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  color: rgb(58, 179, 255);
-}
-
-.dropdown:hover .img-btn {
-  filter: opacity(0.4) drop-shadow(0 0 0 rgb(58, 179, 255));
-}
-
-.cabeçalho-menu-item {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.img-banner {
-  position: relative;
-  top: 70px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.conteudo {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: space-around;
-  justify-content: space-around;
-  padding: 120px 200px 0px 200px;
-}
-
-.rodape-info {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  text-align: center;
-  padding: 10px 20px 20px 20px;
-  position: relative;
-}
-
-@media screen and (max-width: 900px) {
-  .hamburguer {}
-
-  #cabeçalho {
+    float: inline-start;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -159,26 +36,180 @@ nav ul li {
     background-color: white;
     height: 70px;
     z-index: 999;
-  }
+}
 
-  .imagem-cabeçalho {
+.imagem-cabeçalho {
     width: 150px;
-    align-items: center;
-  }
+}
 
-  .cabeçalho-menu {
+.cabeçalho-menu {
     display: flex;
     gap: 10px 30px;
     text-decoration: none;
-  }
+}
 
-  .img-banner {
+.img-btn:hover {
+    filter: opacity(0.4) drop-shadow(0 0 0 rgb(58, 179, 255));
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+.dropbtn {
+    color: #0083fd;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #0083fd;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: rgb(58, 179, 255);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: rgb(58, 179, 255);
+}
+
+.dropdown:hover .img-btn {
+    filter: opacity(0.4) drop-shadow(0 0 0 rgb(58, 179, 255));
+}
+
+.cabeçalho-menu-item {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.img-banner {
     position: relative;
     top: 70px;
-    width: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-  }
+}
+
+.conteudo {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    padding: 120px 200px 0px 200px;
+}
+
+.rodape-info {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    position: relative;
+}
+
+@media screen and (max-width: 900px) {
+    #cabeçalho {
+        float: right;
+        position: relative;
+        top: -5px;
+        cursor: pointer;
+        position: relative;
+        display: block;
+        height: 22px;
+        width: 30px;
+        margin: 30px 30px;
+        display: none;
+    }
+
+    #cabeçalho span {
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 100%;
+        border-radius: 30px;
+        background: black;
+        transition: 0.25s ease-in-out;
+    }
+
+    #cabeçalho a:nth-child(1) {
+        top: 0;
+    }
+
+    #cabeçalho a:nth-child(2) {
+        top: 8px;
+    }
+
+    #cabeçalho a:nth-child(3) {
+        top: 16px;
+    }
+
+    #checkbox:checked+#cabeçalho a:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+
+    #checkbox:checked+#cabeçalho a:nth-child(2) {
+        opacity: 0;
+    }
+
+    #checkbox:checked+#cabeçalho a:nth-child(3) {
+        transform: rotate(+45deg);
+        top: 8px;
+    }
+
+    #checkbox {
+        float: right;
+        display: block;
+    }
+
+    .imagem-cabeçalho {
+        width: 150px;
+        align-items: center;
+    }
+
+    .img-banner {
+        position: relative;
+        top: 70px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
 }

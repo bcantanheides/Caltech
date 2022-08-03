@@ -197,6 +197,7 @@ button.primary.ghost {
   margin-right: 215px;
   margin-top: 50px;
   border-radius: 12px;
+  border: 1px solid #2D2747;
   float: right;
   flex-direction: row;
   flex-wrap: wrap;
@@ -217,7 +218,7 @@ button.primary.ghost {
 
 #descricao {
   border: #fff solid;
-  background-color: #141124;
+  background-color: #000000;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
