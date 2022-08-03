@@ -129,18 +129,6 @@ body {
   padding-bottom: 8px;
 }
 
-.card-container .pro {
-  color: #231E39;
-  background-color: #FEBB0B;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 3px 7px;
-  position: absolute;
-  top: 30px;
-  left: 30px;
-}
-
 .card-container .round {
   border: 1px solid #03BFCB;
   border-radius: 50%;
