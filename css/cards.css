@@ -1,6 +1,6 @@
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 220px;
+  max-width: 210px;
   margin: 15px;
   text-align: center;
   font-family: arial;
@@ -14,6 +14,7 @@
 .card h1 {
   max-height: 28px;
   font-size: 15px;
+  margin: 2px;
 }
 
 .card button {
@@ -42,6 +43,7 @@
 
 .descricao {
   font-family: Arial Narrow, sans-serif;
+  font-size: 15px;
   padding-top: 2px;
   padding-bottom: 8px;
 }
@@ -56,4 +58,65 @@ div:not(.cabeçalho-menu-item)>a:hover img:last-child {
 
 div:not(.cabeçalho-menu-item)>a:hover img:first-child {
   display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 165px;
+    margin: 5px;
+  }
+
+  .card img {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  .card h1 {
+    max-height: 28px;
+    font-size: 15px;
+  }
+
+  .preco {
+    font-size: 15px;
+  }
+
+  .descricao {
+    font-size: 13px;
+  }
+
+  .card button {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 100px;
+    margin: 0px;
+  }
+
+  .card img {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  .card h1 {
+    max-height: 28px;
+    font-size: 13px;
+  }
+
+  .preco {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .descricao {
+    font-size: 12px;
+  }
+
+  .card button {
+    font-size: 9.5px;
+  }
 }
