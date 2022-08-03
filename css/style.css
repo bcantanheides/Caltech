@@ -147,4 +147,15 @@ nav ul li {
     position: relative;
 }
 
-@media screen and (max-width: 900px) {}
+@media screen and (max-width: 900px) {
+    .conteudo {
+        padding: 120px 50px 0px 50px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .conteudo {
+        padding: 120px 15px 0px 15px;
+    }
+}
