@@ -19,7 +19,7 @@ body {
   align-items: center;
   align-content: space-around;
   justify-content: space-around;
-  padding: 130px 200px 100px 200px;
+  padding: 130px 200px 20px 200px;
 }
 
 .conteudo a {
@@ -33,9 +33,41 @@ body {
   padding: 30px;
 }
 
-.conteudo a:hover {
-  color: #0083fd;
+.conteudo h1 {
+  text-align: center;
+  color: yellow;
+  font-family: 'Star Jedi', arial;
+  font-size: 30px;
+  text-shadow: 4px 4px 4px #0083fd;
+  letter-spacing: 2px;
+}
+
+#hide-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+#link-card {
+  text-align: center;
+  padding-top: 90px;
+}
+
+#link-card a {
+  color: white;
+}
+
+#link-card a:hover {
   -webkit-text-stroke: 1px white;
+}
+
+.conteudo h1:hover {
+  -webkit-text-stroke: 1px black;
 }
 
 .imageBox {
@@ -60,24 +92,102 @@ body {
   opacity: 0;
 }
 
-.conteudo h1 {
-  text-align: center;
-  color: yellow;
-  font-family: 'Star Jedi', arial;
-  font-size: 30px;
-  text-shadow: 4px 4px 4px #0083fd;
-  letter-spacing: 2px;
+.menu-expansivo {
+  background: yellow;
+  overflow: hidden;
+  color: #000;
+  line-height: auto;
+  transition: all .5s ease-in-out;
+  height: 0;
 }
 
-.conteudo h4 {
-  text-align: center;
-  color: white;
-  padding-top: 90px;
+.menu-expansivo:target {
+  height: 578px;
 }
 
-.conteudo h1:hover {
-  -webkit-text-stroke: 1px #0083fd;
+/* código dos cards */
+.card-container {
+  background-color: #000000;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(43, 43, 43, 0.75);
+  color: #cbd2eb;
+  padding-top: 30px;
+  position: relative;
+  width: 350px;
+  max-width: 50%;
+  text-align: center;
 }
+
+.card-container h3 {
+  margin: 10px 0;
+}
+
+.card-container h6 {
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+.card-container p {
+  font-size: 14px;
+  line-height: 21px;
+  padding-bottom: 8px;
+}
+
+.card-container .pro {
+  color: #231E39;
+  background-color: #FEBB0B;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.card-container .round {
+  border: 1px solid #03BFCB;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+button.primary {
+  background-color: #03BFCB;
+  border: 1px solid #025ac6;
+  border-radius: 3px;
+  color: #231E39;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 10px;
+}
+
+button.primary.ghost {
+  background-color: transparent;
+  color: #02899C;
+}
+
+.skills {
+  background-color: #141124;
+  text-align: left;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills ul li {
+  border: 1px solid #2D2747;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 7px 7px 0;
+  padding: 7px;
+}
+
 
 .rodape-info {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -88,6 +198,15 @@ body {
   padding: 10px 20px 20px 20px;
   position: relative;
   color: white;
+}
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
 }
 
 @media screen and (max-width: 900px) {}
