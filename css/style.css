@@ -137,26 +137,16 @@ nav ul li {
     padding: 120px 200px 0px 200px;
 }
 
-.slider {
-    width: 800px;
-    height: 500px;
-    overflow: hidden;
-    position: absolute;
+.produto {
+    display: grid;
+    flex-direction: row;
 }
 
-.slides {
-    display: flex;
-}
-
-.navigation-bar {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-input {
-    display: none;
+.produtos img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .rodape-info {
