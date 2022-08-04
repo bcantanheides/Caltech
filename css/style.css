@@ -137,12 +137,12 @@ nav ul li {
     padding: 120px 200px 0px 200px;
 }
 
-.produto{
+.produto {
     display: grid;
     flex-direction: row;
 }
 
-.produtos img{
+.produtos img {
     width: 250px;
     height: 250px;
     object-fit: cover;
@@ -163,10 +163,25 @@ nav ul li {
     .conteudo {
         padding: 120px 50px 0px 50px;
     }
-
 }
 
 @media screen and (max-width: 600px) {
+    #cabeçalho {
+        width: 100%;
+        height: 110px;
+        flex-wrap: wrap;
+    }
+
+    .imagem-cabeçalho {
+        width: 150px;
+        padding: 10px;
+    }
+
+    .cabeçalho-menu ul a {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .conteudo {
         padding: 120px 15px 0px 15px;
     }
